@@ -1,4 +1,4 @@
-namespace ProfileAPI;
+namespace APIB;
 
 public class WeatherForecast
 {
