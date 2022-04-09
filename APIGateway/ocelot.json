@@ -10,7 +10,10 @@
         }
       ],
       "UpstreamPathTemplate": "/apia",
-      "UpstreamHttpMethod": [ "Get" ,"Post"]
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ]
     },
     {
       "DownstreamPathTemplate": "/bapplication",
@@ -22,10 +25,13 @@
         }
       ],
       "UpstreamPathTemplate": "/apib",
-      "UpstreamHttpMethod": [ "Get" ,"Post"]
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ]
     },
     {
-      "DownstreamPathTemplate": "/Auhtorization",
+      "DownstreamPathTemplate": "/connect/token",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -33,8 +39,38 @@
           "Port": 7071
         }
       ],
-      "UpstreamPathTemplate": "/token",
-      "UpstreamHttpMethod": [ "Get" ,"Post"]
+      "UpstreamPathTemplate": "/connect/token",
+      "UpstreamHttpMethod": [
+        "Post"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/resource/message",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/resource/message",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/resource/message-others",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7071
+        }
+      ],
+      "UpstreamPathTemplate": "/sonju/message-others",
+      "UpstreamHttpMethod": [
+        "Get"
+      ]
     }
   ],
   "GlobalConfiguration": {
